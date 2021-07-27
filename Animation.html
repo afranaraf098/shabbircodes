@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation-css property</title>
+	<style>
+		body{background-color: lightgreen;
+			animation-name: myanimation;
+			animation-duration: 16s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+		}
+		@keyframes myanimation{
+			0%{background-color: red;}
+			25%{background-color: lightgreen;}
+			50%{background-color: skyblue;}
+			75%{background-color: black;}
+			100%{background-color: cyan;}
+		}
+		@keyframes box{
+			0%{height: 200px;width: 200px;background-color: white;text-align: left;font-family: showcard gothic;}
+			25%{height: 250px;width: 250px;background-color: white;text-align: center;line-height: 250px;font-family:Castellar;}
+			50%{height: 300px;width: 300px;background-color: white;text-align: right;line-height: 300px;font-family:Engravers MT;}
+			75%{height: 350px;width: 350px;background-color: white;text-align: center;line-height: 35px;font-family:Algerian;}
+			100%{height: 400px;width: 400px;background-color: white;text-align: left;font-family:Goudy Stout;}
+		}
+		.box{height: 200px width:200px background-color: white;
+			animation-name:box;
+			animation-duration: 20s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+		}
+		img:hover{height: 400px;width: 400px;}
+	</style>
+</head>
+<body>
+	<div class="box">this is a text</div>
+	<img src="2.jpg" height="200px" width="200px">
+</body>
+</html>

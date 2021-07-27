@@ -1,0 +1,50 @@
+.team{
+	display: flex;
+	justify-content: space-around;
+}
+.box{
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+	border:10px solid blue;
+	overflow: hidden;
+	
+}
+img{
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+	position: absolute;
+}
+
+.title{
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	line-height: 300px;
+	font-size: 26px;
+	font-family: Broadway;
+
+}
+.t1 img{
+	margin-left: 0px;
+	transition: margin-left 3s;
+}
+
+.t1:hover img{
+	margin-left: 300px;
+}
+.t2 .title{
+	margin-left: -200px;
+	transition: margin-left 1s;
+}
+
+.t2:hover .title{
+	margin-left: 0px;
+	opacity: 0.8;
+}
+
+
